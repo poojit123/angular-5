@@ -1,0 +1,90 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "angular"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css",
+        "extras/bower_components/bootstrap/dist/css/bootstrap.min.css",
+        "extras/bower_components/Ionicons/css/ionicons.min.css",
+        "extras/dist/css/AdminLTE.min.css",
+        "extras/plugins/iCheck/square/blue.css",
+        "extras/dist/css/skins/_all-skins.min.css",
+        "extras/bower_components/morris.js/morris.css",
+        "extras/bower_components/jvectormap/jquery-jvectormap.css",
+        "extras/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css",
+        "extras/bower_components/bootstrap-daterangepicker/daterangepicker.css",
+        "extras/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css"
+      ],
+      "scripts": [
+        "extras/bower_components/jquery/dist/jquery.min.js",
+        "extras/bower_components/jquery-ui/jquery-ui.min.js",
+        "extras/bower_components/bootstrap/dist/js/bootstrap.min.js",
+        "extras/plugins/iCheck/icheck.min.js",
+        "extras/bower_components/raphael/raphael.min.js",
+        "extras/bower_components/morris.js/morris.min.js",
+        "extras/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js",
+        "extras/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js",
+        "extras/plugins/jvectormap/jquery-jvectormap-world-mill-en.js",
+        "extras/bower_components/jquery-knob/dist/jquery.knob.min.js",
+        "extras/bower_components/moment/min/moment.min.js",
+        "extras/bower_components/bootstrap-daterangepicker/daterangepicker.js",
+        "extras/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js",
+        "extras/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js",
+        "extras/bower_components/jquery-slimscroll/jquery.slimscroll.min.js",
+        "extras/bower_components/fastclick/lib/fastclick.js",
+        "extras/dist/js/adminlte.min.js",
+        "extras/dist/js/pages/dashboard.js",
+        "extras/dist/js/demo.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

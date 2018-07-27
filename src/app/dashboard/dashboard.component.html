@@ -1,0 +1,25 @@
+
+<!-- <body class="hold-transition skin-blue sidebar-mini"> -->
+<div class="wrapper">
+
+<!-- Here is top bar selector -->
+<app-top-bar></app-top-bar>
+
+<!-- Here is left side bar selector -->
+<app-side-bar></app-side-bar>
+
+<!-- Main content render here after login -->
+<router-outlet name='contentBox'></router-outlet>
+
+<footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 2.4.0
+    </div>
+    <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
+    reserved.
+</footer>
+
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
